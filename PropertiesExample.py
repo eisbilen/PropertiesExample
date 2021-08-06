@@ -22,15 +22,18 @@ class CSVGetInfo(object):
    print("Setting value of path to {}".format(value))
   else:
    print("Error: {} is not a valid path string".format(value))
+
  @path.deleter
  def path(self):
   print('Deleting path attribute')
   del self._path
+
  @property
  def file_name(self):
   """ The docstring for the file_name property """
   print("Getting value of file_name")
   return self._file_name
+  
  @file_name.setter
  def file_name(self,value):
   if '.' in value:
