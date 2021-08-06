@@ -1,4 +1,5 @@
 import pandas as pd
+import tensorflow as tf
 
 
 class CSVGetInfo(object):
