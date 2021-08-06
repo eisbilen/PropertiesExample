@@ -1,15 +1,19 @@
 import pandas as pd
+
+
 class CSVGetInfo(object):
  """ This class displays the summary of the tabular data contained 
  in a CSV file """
  def __init__(self, path, file_name):
   self._path = path
   self._file_name = file_name
+
  @property
  def path(self):
   """ The docstring for the path property """
   print("Getting value of path")
   return self._path
+
  @path.setter
  def path(self,value):
   if '/' in value:
